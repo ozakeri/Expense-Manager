@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">مدیریت هزینه</string>
+    <string name="action_settings">تنظیمات</string>
+    <string name="add_new_expense">افزودن هزینه جدید</string>
+    <string name="amount">میزان</string>
+    <string name="add_expense">اضافه کردن هزینه</string>
+    <string name="todays_expenses">هزینه های امروز</string>
+    <string name="current_week_expenses">هزینه های هفته جاری</string>
+    <string name="total_expense"> - هزینه کل</string>
+    <string name="rupee_sym">تومان</string>
+    <string name="expense_add_successfully">هزینه با موفقیت اضافه شد ..</string>
+    <string name="amount_empty_error">مقدار نمی تواند خالی باشد !!</string>
+    <string name="current_months_expenses">هزینه های ماه جاری</string>
+    <string name="add_new_category">افزودن دسته جدید</string>
+    <string name="category">دسته بندی</string>
+    <string name="add_category">افزودن دسته</string>
+    <string name="action_add_category">افزودن دسته</string>
+    <string name="category_empty_error">دسته نمی تواند خالی باشد !!</string>
+    <string name="add_category_success">دسته با موفقیت اضافه شد ..</string>
+
+    <array name="drawer_items">
+        <item>خانه</item>
+        <item>این هفته</item>
+        <item>این ماه</item>
+    </array>
+</resources>
