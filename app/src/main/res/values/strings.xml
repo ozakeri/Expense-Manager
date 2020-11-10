@@ -2,11 +2,11 @@
     <string name="app_name">مدیریت هزینه</string>
     <string name="action_settings">تنظیمات</string>
     <string name="add_new_expense">افزودن هزینه جدید</string>
-    <string name="amount">میزان</string>
+    <string name="amount">مبلغ را وارد کنید</string>
     <string name="add_expense">اضافه کردن هزینه</string>
     <string name="todays_expenses">هزینه های امروز</string>
     <string name="current_week_expenses">هزینه های هفته جاری</string>
-    <string name="total_expense"> - هزینه کل</string>
+    <string name="total_expense">هزینه کل</string>
     <string name="rupee_sym">تومان</string>
     <string name="expense_add_successfully">هزینه با موفقیت اضافه شد ..</string>
     <string name="amount_empty_error">مقدار نمی تواند خالی باشد !!</string>

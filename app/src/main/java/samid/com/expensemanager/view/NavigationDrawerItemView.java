@@ -1,7 +1,7 @@
 package samid.com.expensemanager.view;
 
 
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 public interface NavigationDrawerItemView {
   void render(Fragment fragment);

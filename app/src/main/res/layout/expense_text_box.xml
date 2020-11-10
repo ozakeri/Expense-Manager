@@ -4,7 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <TextView
+    <samid.com.expensemanager.widget.CustomTextView
         android:id="@+id/expense_text_box"
         android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
         android:paddingBottom="10dp"

@@ -1,7 +1,7 @@
 package samid.com.expensemanager.activity;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +34,7 @@ public class ExpenseFragment extends Fragment implements ExpenseView, View.OnCli
     expensePresenter.setExpenseTypes();
     expenseDatabaseHelper.close();
 
-    Button addExpenseButton = (Button) getActivity().findViewById(R.id.add_expense);
+    TextView addExpenseButton = getActivity().findViewById(R.id.add_expense);
     addExpenseButton.setOnClickListener(this);
   }
 

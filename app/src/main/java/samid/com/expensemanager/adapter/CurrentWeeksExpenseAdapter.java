@@ -14,6 +14,7 @@ import java.util.Map;
 import samid.com.expensemanager.R;
 import samid.com.expensemanager.model.Expense;
 import samid.com.expensemanager.utils.ExpenseCollection;
+import samid.com.expensemanager.utils.Util;
 
 import static samid.com.expensemanager.utils.DateUtil.getDayName;
 
@@ -85,7 +86,7 @@ public class CurrentWeeksExpenseAdapter implements ExpandableListAdapter {
     }
 
     TextView textBox = (TextView) converterView.findViewById(R.id.expense_header_text_box);
-    textBox.setText(parentText);
+    textBox.setText(Util.latinNumberToPersian(parentText));
 
     return converterView;
   }
@@ -100,7 +101,7 @@ public class CurrentWeeksExpenseAdapter implements ExpandableListAdapter {
     }
 
     TextView textBox = (TextView) converterView.findViewById(R.id.expense_text_box);
-    textBox.setText(childText);
+    textBox.setText(Util.latinNumberToPersian(childText));
 
     return converterView;
   }

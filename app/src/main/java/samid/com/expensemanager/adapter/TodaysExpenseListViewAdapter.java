@@ -6,6 +6,7 @@ import android.widget.ArrayAdapter;
 import java.util.List;
 
 import samid.com.expensemanager.model.Expense;
+import samid.com.expensemanager.utils.Util;
 
 public class TodaysExpenseListViewAdapter extends ArrayAdapter{
   private final List<Expense> expenses;
@@ -23,7 +24,7 @@ public class TodaysExpenseListViewAdapter extends ArrayAdapter{
   @Override
   public Object getItem(int position) {
     Expense expense = expenses.get(position);
-    return expense.getType() + " - " + expense.getAmount();
+    return Util.latinNumberToPersian(expense.getType() + " - " + expense.getAmount());
   }
 
   @Override

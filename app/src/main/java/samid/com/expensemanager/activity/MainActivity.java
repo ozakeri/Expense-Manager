@@ -5,13 +5,13 @@ import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
+import androidx.legacy.app.ActionBarDrawerToggle;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.core.view.GravityCompat;
+import androidx.viewpager.widget.ViewPager;
+import androidx.drawerlayout.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -170,6 +170,7 @@ public class MainActivity extends FragmentActivity implements NavigationDrawerIt
         getActionBar().setTitle(drawerItems[position]);
         drawerLayout.closeDrawer(GravityCompat.START);
         drawerList.bringToFront();
+        getFragmentManager().popBackStack();
         navigationDrawerPresenter.onItemSelected(drawerItems[position]);
         FrameLayout mainFrame = (FrameLayout) findViewById(R.id.main_frame);
         mainFrame.bringToFront();
@@ -206,12 +207,12 @@ public class MainActivity extends FragmentActivity implements NavigationDrawerIt
   private void addTabs() {
     ActionBar.Tab addNewExpenseTab = actionBar.newTab();
     addNewExpenseTab.setTabListener(this);
-    addNewExpenseTab.setText("Add New");
+    addNewExpenseTab.setText("جدید");
     actionBar.addTab(addNewExpenseTab);
 
     ActionBar.Tab todayTab = actionBar.newTab();
     todayTab.setTabListener(this);
-    todayTab.setText("Today");
+    todayTab.setText("امروز");
     actionBar.addTab(todayTab);
   }
 

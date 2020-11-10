@@ -8,6 +8,7 @@ import java.util.List;
 import samid.com.expensemanager.database.ExpenseDatabaseHelper;
 import samid.com.expensemanager.model.Expense;
 import samid.com.expensemanager.utils.ExpenseCollection;
+import samid.com.expensemanager.utils.Util;
 import samid.com.expensemanager.view.CurrentMonthExpenseView;
 
 
@@ -29,6 +30,9 @@ public class CurrentMonthExpensePresenter {
       bar.setColor(view.getGraphColor());
       bar.setName(expense.getType());
       bar.setValue(expense.getAmount());
+      //bar.setValueString(Util.latinNumberToPersian(String.valueOf(expense.getAmount())));
+      System.out.println("getAmount====" + Util.latinNumberToPersian(String.valueOf(expense.getAmount())));
+      System.out.println("getAmount====" + expense.getAmount());
       points.add(bar);
     }
 
